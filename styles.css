@@ -12,8 +12,10 @@ h2 {
 p {
   color: #222222;
 }
-p1{
+#info{
 	color: #999999;
+	text-align: center;
+	padding-top: -100px;
 }
 body{
 	background-color : #eed1ee;

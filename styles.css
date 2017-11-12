@@ -37,6 +37,15 @@ p, * {
 		padding-left: 800px;
   	text-align: center;
 }
+.sm {
+	margin: auto;
+	padding-left: 285px;
+	padding-top: 80px;
+
+}
+
+
+
 
 /* Nav bar */
 /*nav {

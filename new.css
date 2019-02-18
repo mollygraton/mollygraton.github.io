@@ -1,0 +1,284 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 10px;
+}
+
+.header {
+  background: url(libout.jpg) no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+}
+
+.header .container {
+  position: relative;
+  top: 10vw;
+}
+
+.header h1 {
+  color: #fff;
+  line-height: 80px;
+  font-size: 80px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 8px #FF8C00;
+}
+
+@media (min-width:850px) {
+  .header h1 {
+    font-size: 120px;
+  }
+}
+
+.main .container {
+  margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.header h1 {
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: auto;
+  background-color: #000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #deddff;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+  overflow: hidden;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  text-align: center;
+}
+
+/* Left column */
+.bottomcolumn {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* faq column */
+.faqcolumn {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.swagmoney{
+  max-width:100%;
+  height:auto;
+}
+
+#facebl{
+  float: left;
+  width: 20%;
+  max-width: 100px;
+}
+#facebm{
+  margin: 0, auto, 0, 20%;
+  width: 20%;
+  max-width: 100px;
+  display: inline-block;
+}
+#insta{
+  width: 20%;
+  max-width: 100px;
+  float: right;
+}
+
+#lib12 {
+  max-width: 60%;
+  height: auto;
+}
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  top: -290px;
+  right: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: -240px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#libtimes {
+  overflow: auto;
+  position: relative;
+}
+
+#movie1 {
+  position: relative;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  text-align: center;
+  margin: 30% 20% 5% 5%;
+}
+#movie2 {
+  position: relative;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  text-align: justify;
+  margin: 30% 5% 5% 20%;
+}
+
+.inv {
+    display: none;
+    position: relative;
+}
+.lefttime{
+  text-align: center;
+  display: inline-block;
+  float: left;
+  margin-left: 10vw;
+}
+.righttime{
+  text-align: center;
+  display: inline-block;
+  float: right;
+  margin-right: 15vw;
+}
+.time1{
+  display: block;
+  margin-left: 2vw;
+}
+.time2{
+  display: block;
+  margin-left: 8vw;

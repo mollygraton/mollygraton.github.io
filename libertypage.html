@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="new.css" rel = "stylesheet">
+	<title>Golden Age Cinemas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<h1>Golden Age Cinemas</h1>
+		</div>
+	</div>
+
+<div class="topnav">
+  <a href="libwebreal.html">Home</a>
+  <a href="libertypage.html">Liberty 1&2</a>
+  <a href="mchenry.html">McHenry Outdoor</a>
+  <a href="contactpg.html" style="float:right">Contact Us</a>
+</div>
+
+<!-- liberty -->
+<div class="row">
+  <div class="leftcolumn" id="libtimes">
+    <div class="card">
+      <h2>Times</h2>
+      <p>Before 5:00pm: $6 for everyone</p>
+      <p>After 5:00pm: $8 for adults, $6 for kids/seniors</p>
+      <!-- drop down menu -->
+			<select id="target">
+					<option value="content_1">Select...</option>
+					<option value="2">Friday, February 15th</option>
+					<option value="3">Saturday, February 16th</option>
+					<option value="0">Sunday, February 17th</option>
+					<option value="1">Monday, February 18th</option>
+					<option value="1">Tuesday, February 19th</option>
+					<option value="1">Wednesday, February 20th</option>
+					<option value="1">Thursday, February 21st</option>
+					<option value="2">Friday, February 22nd</option>
+					<option value="3">Saturday, February 23rd</option>
+					<option value="0">Sunday, February 24th/option>
+					<option value="1">Monday, February 25th</option>
+					<option value="1">Tuesday, February 26th</option>
+					<option value="1">Wednesday, February 27th</option>
+					<option value="1">Thursday, February 28th</option>
+			<select>
+			<script>
+			document
+					.getElementById('target')
+					.addEventListener('change', function () {
+							'use strict';
+							var vis = document.querySelector('.vis'),
+									target = document.getElementById(this.value);
+							if (vis !== null) {
+									vis.className = 'inv';
+							}
+							if (target !== null ) {
+									target.className = 'vis';
+							}
+			});
+			</script>
+
+			<!-- Friday -->
+			<div id="2" class="inv">
+				<div class="lefttime">
+					<img src="lego.png" id="movie1">
+					<p class="time1">6:45</br>8:45</p>
+				</div>
+				<div class="righttime">
+					<img src="lego.png" id="movie2">
+					<p class="time2" style="text-align:center;">7:00</br>9:00</p>
+				</div>
+			</div>
+			<!-- Saturday -->
+			<div id="3" class="inv">
+				<div class="lefttime">
+					<img src="lego.png" id="movie1">
+					<p class="time1">6:45</br>8:45</p>
+				</div>
+				<div class="righttime">
+					<img src="lego.png" id="movie2">
+					<p class="time2" style="text-align:center;">7:00</br>9:00</p>
+				</div>
+			</div>
+			<!-- Sunday -->
+			<div id="0" class="inv">
+				<div class="lefttime">
+					<img src="lego.png" id="movie1">
+					<p class="time1">6:45</br>8:45</p>
+				</div>
+				<div class="righttime">
+					<img src="lego.png" id="movie2">
+					<p class="time2" style="text-align:center;">7:00</br>9:00</p>
+				</div>
+			</div>
+			<!-- Monday through Thursday -->
+			<div id="1" class="inv">
+				<div class="lefttime">
+					<img src="lego.png" id="movie1">
+					<p class="time1">6:45</p>
+				</div>
+				<div class="righttime">
+					<img src="lego.png" id="movie2">
+					<p class="time2" style="text-align:center;">7:00</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>The Liberty 1&2 Theater</h3>
+			<img src="lib12.jpg" id="lib12">
+      <p>The historic Liberty 1 & 2 Theaters is located in beautiful downtown Libertyville.
+        We at Golden Age Cinemas strive to provide affordable entertainment for the whole
+        family in a fun, clean, and friendly environment. The Liberty 1 & 2 Theater was once the employer of a young Marlon
+        Brando. It is our goal to try to recreate that era of golden age of movie-going within our walls.</p>
+		</div>
+  </div>
+	<div class="faqcolumn">
+    <div class="card">
+      <h3>FAQs</h3>
+      <h4> What time does the theater open?</h4>
+			<p> We open 30 minutes before the first showtime of the day.</p>
+			<h4> What movies will be playing on xx/xx/xx? </h4>
+			<p>Movie times will be posted on the Tuesday prior to the upcoming week</p>
+			<h4> Do you offer discounts for military?</h4>
+			<p>Yes! Tickets are always $6 and concessions are buy one get one free.</p>
+			<h4>Can I host an event at the theater?</h4>
+			<p>Yes. Please email Liberty12Events@gmail.com with your contact info and we will get back to you asap.</p>
+		</div>
+  </div>
+</div>
+
+	<div class="footer">
+	  <p>Golden Age Cinemas © 2019</p>
+	</div>
+
+</body>
+</html>

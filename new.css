@@ -1,17 +1,18 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
   font-weight: 100;
+  margin: 0;
+  padding:0;
+  background: #D45C52;
+}
+* {
+  box-sizing: border-box;
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
 }
 
 .container {
   margin: 0 auto;
   max-width: 940px;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .header {
@@ -19,6 +20,8 @@ body {
   background-size: cover;
   height: 300px;
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header .container {
@@ -35,6 +38,7 @@ body {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   text-shadow: 2px 2px 8px #FF8C00;
+  font-weight: 900;
 }
 
 @media (min-width:850px) {
@@ -50,14 +54,6 @@ body {
 .main img {
   float: left;
   margin: 50px 80px 50px 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-body {
-  padding: 10px;
-  background: #f1f1f1;
 }
 
 .header h1 {
@@ -114,14 +110,15 @@ body {
   float: left;
   width: 75%;
   overflow: hidden;
+  padding: 20px;
 }
 
 /* Right column */
 .rightcolumn {
   float: right;
   width: 25%;
-  background-color: #f1f1f1;
   padding-left: 20px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -131,6 +128,7 @@ body {
   width: 100%;
   overflow: hidden;
   text-align: center;
+  padding: 20px;
 }
 
 /* faq column */
@@ -139,11 +137,12 @@ body {
   width: 100%;
   overflow: hidden;
   text-align: center;
+  padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-  background-color: white;
+  background-color: #ffffff;
   padding: 20px;
   margin-top: 20px;
 }
@@ -159,8 +158,9 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
-  margin-top: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -204,81 +204,90 @@ body {
   max-width: 60%;
   height: auto;
 }
-.dropbtn {
-  background-color: blue;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  position: relative;
-  top: -290px;
-  right: auto;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  top: -240px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-#libtimes {
-  overflow: auto;
-  position: relative;
-}
-
-#movie1 {
-  position: relative;
-  width: 20vw;
-  height: auto;
-  display: flex;
-  text-align: center;
-  margin: 30% 20% 5% 5%;
-}
-#movie2 {
-  position: relative;
-  width: 20vw;
-  height: auto;
-  display: flex;
-  text-align: justify;
-  margin: 30% 5% 5% 20%;
-}
 
 .inv {
     display: none;
     position: relative;
 }
-.lefttime{
-  text-align: center;
+
+
+
+
+#libtimes {
+  overflow: hidden;
+  position: relative;
+}
+/* images */
+#movie1 {
+  position: static;
+  width: 18vw;
+  height: auto;
   display: inline-block;
-  float: left;
-  margin-left: 10vw;
+  margin-left: 0%;
+  margin-top: 5%;
+  clear: both;
+}
+#movie2 {
+  position: relative;
+  width: 18vw;
+  height: auto;
+  display: inline-block;
+  margin-left: 0%;
+  margin-top: 5%;
+  text-align: center;
+  clear: both;
+}
+/* divs */
+.lefttime{
+  display: inline-block;
+  margin-top: 3vh;
+  width: 100%;
 }
 .righttime{
-  text-align: center;
   display: inline-block;
-  float: right;
-  margin-right: 15vw;
+  margin-top: 3vh;
+  width: 100%;
 }
+/* text */
 .time1{
-  display: block;
-  margin-left: 2vw;
+  display: inline-block;
+  text-align: center;
+  font-size: 3vw;
+  margin-left: 20vw;
+  margin-top: 4vh;
+  vertical-align: top;
+  margin-top: 2;
 }
 .time2{
-  display: block;
-  margin-left: 8vw;
+  display: inline-block;
+  text-align: center;
+  font-size: 3vw;
+  margin-left: 20vw;
+  margin-top: 4vh;
+  vertical-align: top;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin-left: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+}
+
+form{
+  display: inline-block;
+}
